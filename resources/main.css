@@ -72,6 +72,22 @@ h1, h2, h3, h4, h5, h6{
     text-shadow: 1px 1px 5px #960000;
 }
 
+table{
+    background-color:white;
+}
+
+table#devTeamTable{
+    width:100%;
+}
+
+tr:nth-child(even){
+    background-color: #c74a4a;
+}
+
+td{
+    font-weight:initial;
+}
+
 img.dragon{
     height: 100px;
     margin: auto 0px;

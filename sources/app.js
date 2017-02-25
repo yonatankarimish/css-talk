@@ -39,6 +39,10 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
             url: '/ng-class',
             templateUrl: 'partials/ng-class.html'
         })
+        .state('pseudoClasses', {
+            url: '/pseudo-classes',
+            templateUrl: 'partials/pseudo-classes.html'
+        })
         .state('responsive', {
             url: '/responsive',
             templateUrl: 'partials/responsive.html'
