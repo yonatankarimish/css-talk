@@ -2,7 +2,7 @@ angular.module('app').controller('scrollController', ['$state',
     function($state){
         var ctrl = this;
 
-        ctrl.views = ['welcome', 'boxModel', 'measure', 'selectors', 'pseudoClasses', 'multiClasses', 'specificity', 'responsive', 'ngClass', 'flex', 'animations', 'goodPractices', 'crossBrowser'];
+        ctrl.views = ['welcome', 'boxModel', 'measure', 'selectors', 'selectors2', 'selectors3', 'pseudoClasses', 'multiClasses', 'specificity', 'responsive', 'ngClass', 'flex', 'animations', 'goodPractices', 'crossBrowser'];
         ctrl.currentView = 0;
 
         ctrl.next = function(){

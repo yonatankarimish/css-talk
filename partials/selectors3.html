@@ -8,20 +8,32 @@
                     <th>Meaning</th>
                 </tr>
                 <tr>
-                    <td>A + B</td>
-                    <td>Applied to elements of type B immediately after element of type A</td>
+                    <td>element[attribute]</td>
+                    <td>Applied to elements which have the specified attribute.</td>
                 </tr>
                 <tr>
-                    <td>A ~ B</td>
-                    <td>Applied to elements of type B which are siblings element of type A</td>
+                    <td>element[attribute='value']</td>
+                    <td>Applied to elements when the specified attribute matches the provided value.</td>
                 </tr>
                 <tr>
-                    <td>A   B</td>
-                    <td>Applied to elements of type B which are descendents  of type A</td>
+                    <td>:first-child</td>
+                    <td>Applied to elements which are the first child of their parent.</td>
                 </tr>
                 <tr>
-                    <td>A > B</td>
-                    <td>Applied to elements of type B which are immediate children of type A</td>
+                    <td>:not(selector)</td>
+                    <td>Negates the expression inside the brackets.</td>
+                </tr>
+                <tr>
+                    <td>:nth-child(keyword)</td>
+                    <td>Can be used with "odd", "even" or a number.</td>
+                </tr>
+                <tr>
+                    <td>input:valid</td>
+                    <td>Selects inputs which are valid.</td>
+                </tr>
+                <tr>
+                    <td>:checked</td>
+                    <td>Selects checkboxes which are checked.</td>
                 </tr>
             </table>
         </section>

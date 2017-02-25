@@ -51,6 +51,14 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
             url: '/selectors',
             templateUrl: 'partials/selectors.html'
         })
+        .state('selectors2', {
+            url: '/selectors2',
+            templateUrl: 'partials/selectors2.html'
+        })
+        .state('selectors3', {
+            url: '/selectors3',
+            templateUrl: 'partials/selectors3.html'
+        })
         .state('specificity', {
             url: '/specificity',
             templateUrl: 'partials/specificity.html'

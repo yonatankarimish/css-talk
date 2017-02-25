@@ -5,6 +5,11 @@
     margin: 0px;
 }
 
+html {
+  background: url(img/background.jpg) no-repeat center top fixed;
+  background-size: cover;
+}
+
 .textCenter{
     text-align:center;
 }
@@ -31,9 +36,7 @@
     flex-direction:column;
 }
 
-div.background{
-    background-image: url(img/background.jpg);
-    background-position: center top;
+div.holder{
     height: 100vh;
 }
 
@@ -77,6 +80,8 @@ table{
 }
 
 table#devTeamTable{
+    border-radius: 10px;
+    padding: 5px 0px;
     width:100%;
 }
 
@@ -162,11 +167,48 @@ textarea.input{
 }
 
 .padded{
-    padding:30px
+    padding: 30px
+}
+
+.lesson label{
+    display: inline-block;
+    margin: 5px 0px;
+    width: 25%;
+}
+
+.lesson label.wide{
+    width: 40%;
+}
+
+.lesson label.narrow{
+    width: 15%;
+}
+
+.lesson label.date{
+    width: 26%;
+}
+
+.lesson input{
+    height: 25px;
+    margin: 5px;
+    padding: 2px 5px;
+    width: 70%;
+}
+
+.lesson input.no-margin{
+    margin: -3px;
+}
+
+.lesson input.tiny{
+    width: 24%;
+}
+
+.lesson label.wide + input{
+    width: 55%;
 }
 
 
-.ui-view-container {
+/*.ui-view-container {
     position: relative;
 }
 
@@ -201,4 +243,4 @@ textarea.input{
     0%   {max-height: 80%;}
     50%  {max: 10%;}
     100% {max: 80%;}
-}
+}*/
