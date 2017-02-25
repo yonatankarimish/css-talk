@@ -3,7 +3,6 @@
     font-family: sans-serif;
     font-weight: bold;
     margin: 0px;
-    transition: all 0.2s linear;
 }
 
 .textCenter{
@@ -45,8 +44,9 @@ section.plaque{
     border-right: 25px solid transparent;
     border-image: url(img/scroll.png) 120 30 stretch;
     margin: auto 0px;
-    max-width: 60%;
+    width: 60%;
     position:relative;
+    /*transition: scrollMvt 2s ease;*/
     z-index:1;
 }
 
@@ -61,6 +61,13 @@ section.plaque::before{
 
 h1{
     font-size:100px;
+}
+
+h2{
+    font-size:60px;
+}
+
+h1, h2, h3, h4, h5, h6{
     text-align:center;
     text-shadow: 1px 1px 5px #960000;
 }
@@ -68,6 +75,7 @@ h1{
 img.dragon{
     height: 100px;
     margin: auto 0px;
+    transition: all 0.2s linear;
     width: 60px;
 }
 
@@ -77,3 +85,104 @@ img.dragon:hover{
     width: 72px;
 }
 
+.toy{
+    background-color: white;
+    border: dotted 2px black;
+    display: inline-block;
+    margin:auto;
+    min-height:20px;
+    min-width:20px;
+    max-width:100%;
+    max-height:35vh;
+    overflow: auto;
+    resize: both;
+}
+
+textarea.input{
+    display: block;
+    height: 30%;
+    margin: 5px auto;
+    resize: none;
+    width: 100%;
+}
+
+.boxModel{
+    padding:15px;
+    padding-top: 5px;
+    text-align:center;
+}
+
+.boxModel.shadow{
+    background-color: red;
+}
+
+.boxModel.outline{
+    background-color: orange;
+}
+
+.boxModel.margin{
+    background-color: yellow;
+}
+
+.boxModel.border{
+    background-color: green;
+}
+
+.boxModel.padding{
+    background-color: cyan;
+}
+
+.boxModel.content{
+    background-color: white;
+}
+
+.lesson, .practice{
+    width:50%;
+}
+
+.limes{
+    border-radius: 15px;
+    border: solid 5px black;
+}
+
+.padded{
+    padding:30px
+}
+
+
+.ui-view-container {
+    position: relative;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+    opacity: 0;
+    transform:translate3d(0, 100px, 0);
+}
+
+[ui-view].ng-enter-active {
+    opacity: 1;
+    transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave {
+    opacity: 1;
+    transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+    opacity: 0;
+    transform:translate3d(0, -100%, 0);
+}
+
+@keyframes scrollMvt {
+    0%   {max-height: 80%;}
+    50%  {max: 10%;}
+    100% {max: 80%;}
+}

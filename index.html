@@ -12,13 +12,14 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="sources/app.js"></script>
     <script src="sources/scrollController.js"></script>
+    <script src="sources/toyController.js"></script>
 
     <link rel="stylesheet" href="resources/main.css">
 </head>
 <body ng-app="app" ng-controller="scrollController as scrollCtrl">
     <div class="flex-container flex-horizontal background">
         <img class="dragon" src="resources/img/leftArrow.png" ng-click="scrollCtrl.previous();" />
-        <section class="plaque">
+        <section class="plaque ui-view-container">
             <div ui-view></div>
         </section>
         <img class="dragon" src="resources/img/rightArrow.png" ng-click="scrollCtrl.next();" />
