@@ -5,6 +5,15 @@
     margin: 0px;
 }
 
+:focus {
+    outline: #c74a4a auto 5px;
+}
+
+::selection {
+    background-color: #c74a4a;
+    color: white;
+}
+
 html {
   background: url(img/background.jpg) no-repeat center top fixed;
   background-size: cover;
@@ -22,6 +31,10 @@ html {
     -moz-justify-content:center;
     -webkit-justify-content:center;
     justify-content:center;
+}
+
+flex-item{
+
 }
 
 .flex-horizontal{
@@ -73,6 +86,12 @@ h2{
 h1, h2, h3, h4, h5, h6{
     text-align:center;
     text-shadow: 1px 1px 5px #960000;
+}
+
+input, select{
+    height: 25px;
+    margin: 5px;
+    padding: 2px 5px;
 }
 
 table{
@@ -189,9 +208,6 @@ textarea.input{
 }
 
 .lesson input{
-    height: 25px;
-    margin: 5px;
-    padding: 2px 5px;
     width: 70%;
 }
 
@@ -205,6 +221,39 @@ textarea.input{
 
 .lesson label.wide + input{
     width: 55%;
+}
+
+.lesson input.specificity{
+    margin: 15px -5px;
+    width: 100%;
+}
+
+div.specificity span{
+    background-color: #fdd257;
+    display: inline-block;
+    border: solid 3px darkred;
+    margin: -2px -4px;
+    padding: 5px;
+    text-align: center;
+    width: 23%;
+}
+
+div.specificity span.wide{
+    display: inline-block;
+    border: solid 3px darkred;
+    margin: -2px -4px;
+    padding: 5px;
+    text-align: center;
+    width: 31%;
+}
+
+.block{
+    background-color: white;
+    border: dotted 5px black;
+    height: 50px;
+    line-height: 40px;
+    margin: 15px;
+    width: 50px;
 }
 
 

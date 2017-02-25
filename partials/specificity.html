@@ -1,3 +1,31 @@
 <div>
-    <h1>Specificity Rules</h1>
+    <h2>Specificity Rules</h2>
+    <div class="flex-container flex-horizontal">
+        <section class="lesson padded">
+            <div class="specificity">
+                <span>Inline</span>
+                <span>#ID</span>
+                <span class="wide">.Class, :pseudo, [attribute]</span>
+                <span>Element</span>
+            <div class="specificity">
+                <span>0</span>
+                <span>0</span>
+                <span class="wide">0</span>
+                <span>0</span>
+            </div>
+            <input class="specificity" type="text" value="section#lecture .fat.board span.sentence.red" />
+            <div class="specificity">
+                <span>Inline</span>
+                <span>#ID</span>
+                <span class="wide">.Class, :pseudo, [attribute]</span>
+                <span>Element</span>
+            <div class="specificity">
+                <span><input class="specificity" type="number" placeholder="DD" /></span>
+                <span><input class="specificity" type="number" placeholder="DD" /></span>
+                <span class="wide"><input class="specificity" type="number" placeholder="DD" /></span>
+                <span><input class="specificity" type="number" placeholder="DD" /></span>
+            </div>
+        </section>
+        <complex-css class="practice padded textCenter"></complex-css>
+    </div>
 </div>

@@ -7,10 +7,6 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
             url: '/welcome',
             templateUrl: 'partials/welcome.html'
         })
-        .state('animations', {
-            url: '/animations',
-            templateUrl: 'partials/animations.html'
-        })
         .state('boxModel', {
             url: '/box-model',
             templateUrl: 'partials/box-model.html'
@@ -42,10 +38,6 @@ angular.module('app').config(function($stateProvider, $urlRouterProvider) {
         .state('pseudoClasses', {
             url: '/pseudo-classes',
             templateUrl: 'partials/pseudo-classes.html'
-        })
-        .state('responsive', {
-            url: '/responsive',
-            templateUrl: 'partials/responsive.html'
         })
         .state('selectors', {
             url: '/selectors',
